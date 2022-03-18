@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Sign Up Form";
+}
+
+@model Appointment
+
+<form method="post">
+    <label asp-for="GroupName">Name of Group</label>
+    <input asp-for="GroupName" />
+    <br />
+    <label asp-for="GroupSize">Size of Group</label>
+    <input asp-for="GroupSize" />
+    <br />
+    <label asp-for="Email">Email Address</label>
+    <input asp-for="Email" />
+    <br />
+    <label asp-for="Phone">Phone Number </label>
+    <input asp-for="Phone" />
+    <br />
+    <button type="submit">Submit </button>
+</form>
