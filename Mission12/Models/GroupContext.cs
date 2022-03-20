@@ -10,7 +10,7 @@ namespace Mission12.Models
 {
     public class GroupContext : DbContext
     {
-        // Setting up the standard options for DbContext
+
         public GroupContext (DbContextOptions<GroupContext> options) : base (options)
         {
 

@@ -32,9 +32,15 @@ namespace Mission12.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult ViewAppoinments()
+        public IActionResult ViewAppointments(Appointment a)
         {
+            //var appointments = AppointmentContext.Appointments
+                
+            //    .OrderBy(a => a.AppointmentId)
+            //    .ToList();
+
             return View();
+
         }
     }
 }

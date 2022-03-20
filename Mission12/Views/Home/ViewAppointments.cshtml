@@ -3,5 +3,34 @@
     ViewData["Title"] = "View Appointments";
 }
 
+@model List<Appointment>
+
 @*View Appointments Page: This page will list out all of the appointments that have been made.
     Each appointment should have an option to Edit or Delete that appointment.*@
+
+<table class="table table-bordered table-striped">
+    <thead class="font-weight-bold">
+        <tr>
+            <td>Appointment ID</td>
+            <td>Description</td>
+            <td>StartDate</td>
+            <td>EndDate</td>
+</thead>
+
+
+    <tbody>
+        @foreach (var a in Model)
+        {
+        <tr>
+            <td>@a.AppointmentId</td>
+            <td>@a.Description</td>
+            <td>@a.StartDate</td>
+            <td>@a.EndDate</td>
+
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-appointmentid="@a.AppointmentId">Edit</a></td>
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-appointmentid="@a.AppointmentId">Delete</a></td>
+        </tr>
+        }
+    </tbody>
+
+</table>
