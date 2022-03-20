@@ -27,8 +27,8 @@ namespace Mission12
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<AppointmentContext>(options =>
-           options.UseSqlite(Configuration.GetConnectionString("AppointmentConnection")));
+            services.AddDbContext<GroupContext>(options =>
+           options.UseSqlite(Configuration.GetConnectionString("GroupConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

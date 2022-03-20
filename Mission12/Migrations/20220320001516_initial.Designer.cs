@@ -7,9 +7,9 @@ using Mission12.Models;
 
 namespace Mission12.Migrations
 {
-    [DbContext(typeof(AppointmentContext))]
-    [Migration("20220316171820_third")]
-    partial class third
+    [DbContext(typeof(GroupContext))]
+    [Migration("20220320001516_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -17,9 +17,9 @@ namespace Mission12.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.23");
 
-            modelBuilder.Entity("Mission12.Models.Appointment", b =>
+            modelBuilder.Entity("Mission12.Models.Group", b =>
                 {
-                    b.Property<int>("AppointmentId")
+                    b.Property<int>("GroupId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -31,16 +31,15 @@ namespace Mission12.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("GroupSize")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("GroupSize")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Phone")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("AppointmentId");
+                    b.HasKey("GroupId");
 
-                    b.ToTable("Appointments");
+                    b.ToTable("Groups");
                 });
 #pragma warning restore 612, 618
         }

@@ -2,21 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Mission12.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 
 namespace Mission12.Models
 {
-    public class AppointmentContext : DbContext
+    public class GroupContext : DbContext
     {
-        
-        public AppointmentContext (DbContextOptions<GroupContext> options) : base (options)
+        // Setting up the standard options for DbContext
+        public GroupContext (DbContextOptions<GroupContext> options) : base (options)
         {
 
         }
 
-        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Group> Groups { get; set; }
     }
 }

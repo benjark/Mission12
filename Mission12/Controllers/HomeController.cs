@@ -6,10 +6,10 @@ namespace Mission12.Controllers
     public class HomeController : Controller
     {
 
-        private AppointmentContext context { get; set; }
+        private GroupContext context { get; set; }
        
 
-        public HomeController(AppointmentContext temp)
+        public HomeController(GroupContext temp)
         {
             context = temp;
         }
@@ -24,11 +24,16 @@ namespace Mission12.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Form(Appointment a)
+        public IActionResult Form(Group g)
         {
-            context.Add(a);
+            context.Add(g);
             context.SaveChanges();
 
+            return View();
+        }
+        [HttpGet]
+        public IActionResult ViewAppoinments()
+        {
             return View();
         }
     }
