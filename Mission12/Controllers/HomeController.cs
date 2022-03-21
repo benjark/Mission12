@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Dynamic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Mission12.Models;
 
@@ -22,16 +23,19 @@ namespace Mission12.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Form()
-        {
-            return View();
-        }
-        [HttpPost]
         public IActionResult Form(Group g)
         {
+            return View(g);
+        }
+        [HttpPost]
+        public IActionResult Form(int appointmentId, Group g)
+        {
             repo.CreateGroup(g);
+            var app = apprepo.Appointments.FirstOrDefault(x => x.AppointmentId == appointmentId);
+            app.Group = repo.Groups.FirstOrDefault(x => x.GroupId == g.GroupId);
+            apprepo.SaveAppointment(app);
 
-            return RedirectToAction("SignUp");
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public IActionResult ViewAppointments(Appointment a)
