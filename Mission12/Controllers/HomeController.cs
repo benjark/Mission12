@@ -50,7 +50,7 @@ namespace Mission12.Controllers
         {
             ViewBag.Cat = apprepo.Appointments.ToList();
             var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            return View("AddApp", appt);
+            return View("Form", appt);
         }
 
         [HttpPost]
@@ -77,10 +77,9 @@ namespace Mission12.Controllers
         public IActionResult Delete(int appointmentId)
         {
             Appointment appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            //apprepo.DeleteAppointment(appt);
             appt.Booked = false;
             apprepo.SaveAppointment(appt);
-            return RedirectToAction("ViewAppointments");
+            return RedirectToAction("Index");
 
         }
 
