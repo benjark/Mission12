@@ -15,7 +15,7 @@ namespace Mission12.Models
             context = temp;
         }
 
-        public IQueryable<Appointment> Appointments => context.Appointments.Include(x => x.Booked == false);
+        public IQueryable<Appointment> Appointments => context.Appointments;
 
         public void SaveAppointment(Appointment appointment)
         {
