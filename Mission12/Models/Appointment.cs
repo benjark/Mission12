@@ -12,9 +12,9 @@ namespace Mission12.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        //Build Foreign Key Relationship to Groups
+        public bool Booked { get; set; }
 
         public int GroupId { get; set; }
-       
+        public Group Group { get; set; }
     }
 }

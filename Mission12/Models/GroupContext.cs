@@ -17,5 +17,6 @@ namespace Mission12.Models
         }
 
         public DbSet<Group> Groups { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
     }
 }
