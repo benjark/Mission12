@@ -3,9 +3,36 @@
     ViewData["Title"] = "Signup Page";
 }
 
-@Model Appointment
-
 @*Sign Up Page: This page will display the available times. Ignore the time slots on the SignUpGenius page.
     For our purposes, we will say the tours occur every hour on the hour from 8:00 am – 8:00 pm (i.e. the last tour
     starts at 8:00 pm.) Once the user selects a time, they are routed to a form that has the date info set,
     but allows the user to enter their info.*@
+
+@model List<Appointment>
+
+
+<table class="table table-bordered table-striped">
+    <thead class="font-weight-bold">
+        <tr>
+            <td>Appointment ID</td>
+            <td>Description</td>
+            <td>StartDate</td>
+            <td>EndDate</td>
+    </thead>
+
+
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr>
+                <td>@a.AppointmentId</td>
+                <td>@a.Description</td>
+                <td>@a.StartDate</td>
+                <td>@a.EndDate</td>
+
+                <td><a asp-controller="Home" asp-action="Form" asp-route-appointmentid="@a.AppointmentId">Sign Up</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

@@ -29,8 +29,8 @@ namespace Mission12
             services.AddControllersWithViews();
             services.AddDbContext<GroupContext>(options =>
            options.UseSqlite(Configuration.GetConnectionString("GroupConnection")));
-            services.AddDbContext<AppointmentContext>(options =>
-          options.UseSqlite(Configuration.GetConnectionString("AppointmentConnection")));
+            services.AddScoped<IGroupRepository, EFGroupRepository>();
+            services.AddScoped<IAppointmentRepository, EFAppointmentRepository>();
 
         }
 
