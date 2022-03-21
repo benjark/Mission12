@@ -14,7 +14,7 @@ namespace Mission12.Models
 
         public bool Booked { get; set; }
 
-        public int GroupId { get; set; }
+        public int? GroupId { get; set; }
         public Group Group { get; set; }
     }
 }

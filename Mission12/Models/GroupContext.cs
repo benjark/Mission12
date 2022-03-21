@@ -31,7 +31,7 @@ namespace Mission12.Models
                     EndDate = DateTime.ParseExact("03/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
                     Booked = true,
                     GroupId = 1
-                     
+
                 },
                 new Appointment
                 {
@@ -41,7 +41,7 @@ namespace Mission12.Models
                     EndDate = DateTime.ParseExact("03/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
                     Booked = true,
                     GroupId = 2
-                     
+
                 },
                 new Appointment
                 {
@@ -51,7 +51,7 @@ namespace Mission12.Models
                     EndDate = DateTime.ParseExact("03/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
                     Booked = true,
                     GroupId = 3
-                     
+
                 },
                 new Appointment
                 {
@@ -59,8 +59,8 @@ namespace Mission12.Models
                     Description = "Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
                 },
                 new Appointment
                 {
@@ -68,8 +68,8 @@ namespace Mission12.Models
                     Description = "Mid Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
                 },
                 new Appointment
                 {
@@ -77,8 +77,8 @@ namespace Mission12.Models
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
                 },
                 new Appointment
                 {
@@ -86,8 +86,9 @@ namespace Mission12.Models
                     Description = "Evening",
                     StartDate = DateTime.ParseExact("03/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -95,8 +96,9 @@ namespace Mission12.Models
                     Description = "Mid Evening",
                     StartDate = DateTime.ParseExact("03/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -104,8 +106,9 @@ namespace Mission12.Models
                     Description = "Late Evening",
                     StartDate = DateTime.ParseExact("03/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 //day two
                 new Appointment
@@ -114,8 +117,9 @@ namespace Mission12.Models
                     Description = "Morning",
                     StartDate = DateTime.ParseExact("04/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
 
 
                 },
@@ -125,8 +129,9 @@ namespace Mission12.Models
                     Description = "Mid Morning",
                     StartDate = DateTime.ParseExact("04/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -134,8 +139,9 @@ namespace Mission12.Models
                     Description = "Late Morning",
                     StartDate = DateTime.ParseExact("04/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -143,8 +149,9 @@ namespace Mission12.Models
                     Description = "Afternoon",
                     StartDate = DateTime.ParseExact("04/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-        
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -152,8 +159,9 @@ namespace Mission12.Models
                     Description = "Mid Afternoon",
                     StartDate = DateTime.ParseExact("04/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -161,8 +169,9 @@ namespace Mission12.Models
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("04/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -170,8 +179,9 @@ namespace Mission12.Models
                     Description = "Evening",
                     StartDate = DateTime.ParseExact("04/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -179,8 +189,9 @@ namespace Mission12.Models
                     Description = "Mid Evening",
                     StartDate = DateTime.ParseExact("04/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -188,8 +199,9 @@ namespace Mission12.Models
                     Description = "Late Evening",
                     StartDate = DateTime.ParseExact("04/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("04/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 //day 3
                 new Appointment
@@ -198,8 +210,9 @@ namespace Mission12.Models
                     Description = "Morning",
                     StartDate = DateTime.ParseExact("05/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -207,8 +220,9 @@ namespace Mission12.Models
                     Description = "Mid Morning",
                     StartDate = DateTime.ParseExact("05/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -216,8 +230,9 @@ namespace Mission12.Models
                     Description = "Late Morning",
                     StartDate = DateTime.ParseExact("05/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -225,8 +240,9 @@ namespace Mission12.Models
                     Description = "Afternoon",
                     StartDate = DateTime.ParseExact("05/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -234,8 +250,9 @@ namespace Mission12.Models
                     Description = "Mid Afternoon",
                     StartDate = DateTime.ParseExact("05/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -243,8 +260,9 @@ namespace Mission12.Models
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("05/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -252,8 +270,9 @@ namespace Mission12.Models
                     Description = "Evening",
                     StartDate = DateTime.ParseExact("05/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -261,8 +280,9 @@ namespace Mission12.Models
                     Description = "Mid Evening",
                     StartDate = DateTime.ParseExact("05/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -270,8 +290,9 @@ namespace Mission12.Models
                     Description = "Late Evening",
                     StartDate = DateTime.ParseExact("05/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("05/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 //day 4
                 new Appointment
@@ -280,8 +301,9 @@ namespace Mission12.Models
                     Description = "Morning",
                     StartDate = DateTime.ParseExact("06/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
 
 
                 },
@@ -291,8 +313,9 @@ namespace Mission12.Models
                     Description = "Mid Morning",
                     StartDate = DateTime.ParseExact("06/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -300,8 +323,9 @@ namespace Mission12.Models
                     Description = "Late Morning",
                     StartDate = DateTime.ParseExact("06/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -309,8 +333,9 @@ namespace Mission12.Models
                     Description = "Afternoon",
                     StartDate = DateTime.ParseExact("06/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -318,8 +343,9 @@ namespace Mission12.Models
                     Description = "Mid Afternoon",
                     StartDate = DateTime.ParseExact("06/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -327,8 +353,9 @@ namespace Mission12.Models
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("06/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -336,8 +363,9 @@ namespace Mission12.Models
                     Description = "Evening",
                     StartDate = DateTime.ParseExact("06/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -345,8 +373,9 @@ namespace Mission12.Models
                     Description = "Mid Evening",
                     StartDate = DateTime.ParseExact("06/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -354,8 +383,9 @@ namespace Mission12.Models
                     Description = "Late Evening",
                     StartDate = DateTime.ParseExact("06/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("06/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 //day 5
                 new Appointment
@@ -364,8 +394,9 @@ namespace Mission12.Models
                     Description = "Morning",
                     StartDate = DateTime.ParseExact("07/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -373,8 +404,9 @@ namespace Mission12.Models
                     Description = "Mid Morning",
                     StartDate = DateTime.ParseExact("07/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -382,8 +414,9 @@ namespace Mission12.Models
                     Description = "Late Morning",
                     StartDate = DateTime.ParseExact("07/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -391,8 +424,9 @@ namespace Mission12.Models
                     Description = "Afternoon",
                     StartDate = DateTime.ParseExact("07/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -400,8 +434,9 @@ namespace Mission12.Models
                     Description = "Mid Afternoon",
                     StartDate = DateTime.ParseExact("07/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -409,8 +444,9 @@ namespace Mission12.Models
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("07/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -418,8 +454,9 @@ namespace Mission12.Models
                     Description = "Evening",
                     StartDate = DateTime.ParseExact("07/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -427,8 +464,9 @@ namespace Mission12.Models
                     Description = "Mid Evening",
                     StartDate = DateTime.ParseExact("07/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 },
                 new Appointment
                 {
@@ -436,10 +474,11 @@ namespace Mission12.Models
                     Description = "Late Evening",
                     StartDate = DateTime.ParseExact("07/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("07/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false
-                     
+                    Booked = false,
+                    GroupId = null
+
                 }
-                );
+                ) ;
         }
 
     }
