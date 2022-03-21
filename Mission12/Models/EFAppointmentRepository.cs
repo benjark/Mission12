@@ -16,7 +16,10 @@ namespace Mission12.Models
         }
 
         public IQueryable<Appointment> Appointments => context.Appointments;
+<<<<<<< HEAD
             //.Where(x => x.Booked == false);
+=======
+>>>>>>> c37022727413db96decfa52369521f0afec209e3
 
         public void SaveAppointment(Appointment appointment)
         {
