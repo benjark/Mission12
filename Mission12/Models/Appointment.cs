@@ -11,6 +11,7 @@ namespace Mission12.Models
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+
         public bool Booked { get; set; }
 
         public int GroupId { get; set; }
