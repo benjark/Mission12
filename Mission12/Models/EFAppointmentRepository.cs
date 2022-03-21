@@ -27,7 +27,8 @@ namespace Mission12.Models
         public void DeleteAppointment(Appointment appointment)
         {
             var app = context.Appointments.First(a => a.AppointmentId == appointment.AppointmentId);
-            context.Remove(app);
+            app.Booked = false;
+            app.GroupId = null;
             context.SaveChanges();
         }
     }
