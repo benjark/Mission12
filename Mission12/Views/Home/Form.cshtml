@@ -5,18 +5,56 @@
 
 @model Group
 
-<form method="post">
-    <label asp-for="GroupName">Name of Group</label>
-    <input asp-for="GroupName" />
-    <br />
-    <label asp-for="GroupSize">Size of Group</label>
-    <input asp-for="GroupSize" />
-    <br />
-    <label asp-for="Email">Email Address</label>
-    <input asp-for="Email" />
-    <br />
-    <label asp-for="Phone">Phone Number </label>
-    <input asp-for="Phone" />
-    <br />
-    <button type="submit">Submit </button>
+
+
+<form method="post" class="border-dark c.solid">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <label asp-for="GroupName">Name of Group</label>
+            </div>
+
+            <input asp-for="GroupName" />
+
+        </div>
+        <br />
+
+
+        <div class="row">
+            <div class="col-2">
+                <label asp-for="GroupSize">Size of Group</label>
+            </div>
+            <input asp-for="GroupSize" />
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2">
+                <label asp-for="Email">Email Address</label>
+            </div>
+            <input asp-for="Email" />
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2">
+                <label asp-for="Phone">Phone Number</label>
+            </div>
+            <input asp-for="Phone" />
+
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Submit </button>
+            </div>
+            
+        </div>
+
+    </div>
+    
 </form>
