@@ -14,7 +14,7 @@ namespace Mission12.Models
             context = temp;
         }
 
-        public IQueryable<Group> Groups => context.Groups;
+        public IQueryable<Group> Groups => (IQueryable<Group>)context.Groups;
 
         public void SaveGroup(Group group)
         {

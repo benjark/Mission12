@@ -10,5 +10,7 @@ namespace Mission12.Models
         public IQueryable<Appointment> Appointments { get; }
 
         public void SaveAppointment(Appointment appointment);
+
+        public void DeleteAppointment(Appointment appointment);
     }
 }

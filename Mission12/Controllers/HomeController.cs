@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Mission12.Models;
-using System.Linq;
 
 namespace Mission12.Controllers
 {
@@ -45,17 +44,17 @@ namespace Mission12.Controllers
         [HttpGet]
         public IActionResult Edit(int appointmentId)
         {
-            ViewBag.Cat = context.Something.ToList();
-            var appt = context.Responses.Single(x => x.AppointmentId == appointmentId);
+            ViewBag.Cat = apprepo.Appointments.ToList();
+            var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
             return View("AddAppt", appt);
         }
 
         [HttpPost]
         public IActionResult Edit(Appointment a)
         {
-            context.Update(a);
-            context.SaveChanges();
-            return RedirectToAction("ViewAppointment");
+        
+            apprepo.SaveAppointment(a);
+            return RedirectToAction("ViewAppointments");
         }
 
         [HttpGet]
@@ -63,19 +62,18 @@ namespace Mission12.Controllers
         {
             var appointments = apprepo.Appointments;
 
-                {
+            {
                 appointments = apprepo.Appointments
                 .Where(a => a.Booked == false);
-                
-                };
-            return View(appointments);
 
+            };
+            return View(appointments);
+        }
         [HttpGet]
         public IActionResult Delete(int appointmentId)
         {
-            Appointment appt = context.Responses.Single(x => x.AppointmentId == appointmentId);
-            context.Responses.Remove(appt);
-            context.SaveChanges();
+            Appointment appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
+                apprepo.DeleteAppointment(appt);
             return RedirectToAction("ViewAppointment");
         }
 
