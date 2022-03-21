@@ -71,7 +71,7 @@ namespace Mission12.Models
                     AppointmentId = 6,
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
-                    EndDate = DateTime.ParseExact("03/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),,
+                    EndDate = DateTime.ParseExact("03/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
                     Booked = false,
                     GroupId = 0,
                 },
