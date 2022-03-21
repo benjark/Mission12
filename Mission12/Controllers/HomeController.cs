@@ -36,17 +36,17 @@ namespace Mission12.Controllers
         [HttpGet]
         public IActionResult ViewAppointments(Appointment a)
         {
-            var appointments = apprepo.Appointments;
-            
+            var appointments = apprepo.Appointments
+                .Where(a => a.Booked == true);
+
             return View(appointments);
         }
-
-        [HttpGet]
+           [HttpGet]
         public IActionResult Edit(int appointmentId)
         {
             ViewBag.Cat = apprepo.Appointments.ToList();
             var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            return View("AddAppt", appt);
+            return View("AddApp", appt);
         }
 
         [HttpPost]
@@ -73,8 +73,11 @@ namespace Mission12.Controllers
         public IActionResult Delete(int appointmentId)
         {
             Appointment appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-                apprepo.DeleteAppointment(appt);
-            return RedirectToAction("ViewAppointment");
+            //apprepo.DeleteAppointment(appt);
+            appt.Booked = false;
+            apprepo.SaveAppointment(appt);
+            return RedirectToAction("ViewAppointments");
+
         }
 
     }
