@@ -27,16 +27,16 @@ namespace Mission12.Models
             );
 
             mb.Entity<Appointment>().HasData(
+                //day 1
                 new Appointment
                 {
                     AppointmentId = 1,
                     Description = "Morning",
                     StartDate = DateTime.ParseExact("03/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
-
-
+                    Booked = true,
+                    GroupId = 1
+                     
                 },
                 new Appointment
                 {
@@ -44,8 +44,9 @@ namespace Mission12.Models
                     Description = "Mid Morning",
                     StartDate = DateTime.ParseExact("03/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = true,
+                    GroupId = 2
+                     
                 },
                 new Appointment
                 {
@@ -53,8 +54,9 @@ namespace Mission12.Models
                     Description = "Late Morning",
                     StartDate = DateTime.ParseExact("03/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = true,
+                    GroupId = 3
+                     
                 },
                 new Appointment
                 {
@@ -62,8 +64,8 @@ namespace Mission12.Models
                     Description = "Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = false
+                     
                 },
                 new Appointment
                 {
@@ -71,8 +73,8 @@ namespace Mission12.Models
                     Description = "Mid Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = false
+                     
                 },
                 new Appointment
                 {
@@ -80,8 +82,8 @@ namespace Mission12.Models
                     Description = "Late Afternoon",
                     StartDate = DateTime.ParseExact("03/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = false
+                     
                 },
                 new Appointment
                 {
@@ -89,8 +91,8 @@ namespace Mission12.Models
                     Description = "Evening",
                     StartDate = DateTime.ParseExact("03/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = false
+                     
                 },
                 new Appointment
                 {
@@ -98,8 +100,8 @@ namespace Mission12.Models
                     Description = "Mid Evening",
                     StartDate = DateTime.ParseExact("03/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
+                    Booked = false
+                     
                 },
                 new Appointment
                 {
@@ -107,11 +109,342 @@ namespace Mission12.Models
                     Description = "Late Evening",
                     StartDate = DateTime.ParseExact("03/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
                     EndDate = DateTime.ParseExact("03/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
-                    Booked = false,
-                    GroupId = 0,
-                });
+                    Booked = false
+                     
+                },
+                //day two
+                new Appointment
+                {
+                    AppointmentId = 10,
+                    Description = "Morning",
+                    StartDate = DateTime.ParseExact("04/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
 
+
+                },
+                new Appointment
+                {
+                    AppointmentId = 11,
+                    Description = "Mid Morning",
+                    StartDate = DateTime.ParseExact("04/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 12,
+                    Description = "Late Morning",
+                    StartDate = DateTime.ParseExact("04/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 13,
+                    Description = "Afternoon",
+                    StartDate = DateTime.ParseExact("04/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+        
+                },
+                new Appointment
+                {
+                    AppointmentId = 14,
+                    Description = "Mid Afternoon",
+                    StartDate = DateTime.ParseExact("04/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 15,
+                    Description = "Late Afternoon",
+                    StartDate = DateTime.ParseExact("04/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 16,
+                    Description = "Evening",
+                    StartDate = DateTime.ParseExact("04/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 17,
+                    Description = "Mid Evening",
+                    StartDate = DateTime.ParseExact("04/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 18,
+                    Description = "Late Evening",
+                    StartDate = DateTime.ParseExact("04/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("04/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                //day 3
+                new Appointment
+                {
+                    AppointmentId = 19,
+                    Description = "Morning",
+                    StartDate = DateTime.ParseExact("05/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 20,
+                    Description = "Mid Morning",
+                    StartDate = DateTime.ParseExact("05/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 21,
+                    Description = "Late Morning",
+                    StartDate = DateTime.ParseExact("05/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 22,
+                    Description = "Afternoon",
+                    StartDate = DateTime.ParseExact("05/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 23,
+                    Description = "Mid Afternoon",
+                    StartDate = DateTime.ParseExact("05/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 24,
+                    Description = "Late Afternoon",
+                    StartDate = DateTime.ParseExact("05/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 25,
+                    Description = "Evening",
+                    StartDate = DateTime.ParseExact("05/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 26,
+                    Description = "Mid Evening",
+                    StartDate = DateTime.ParseExact("05/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 27,
+                    Description = "Late Evening",
+                    StartDate = DateTime.ParseExact("05/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("05/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                //day 4
+                new Appointment
+                {
+                    AppointmentId = 28,
+                    Description = "Morning",
+                    StartDate = DateTime.ParseExact("06/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+
+
+                },
+                new Appointment
+                {
+                    AppointmentId = 29,
+                    Description = "Mid Morning",
+                    StartDate = DateTime.ParseExact("06/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 30,
+                    Description = "Late Morning",
+                    StartDate = DateTime.ParseExact("06/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 31,
+                    Description = "Afternoon",
+                    StartDate = DateTime.ParseExact("06/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 32,
+                    Description = "Mid Afternoon",
+                    StartDate = DateTime.ParseExact("06/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 33,
+                    Description = "Late Afternoon",
+                    StartDate = DateTime.ParseExact("06/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 34,
+                    Description = "Evening",
+                    StartDate = DateTime.ParseExact("06/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 35,
+                    Description = "Mid Evening",
+                    StartDate = DateTime.ParseExact("06/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 36,
+                    Description = "Late Evening",
+                    StartDate = DateTime.ParseExact("06/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("06/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                //day 5
+                new Appointment
+                {
+                    AppointmentId = 37,
+                    Description = "Morning",
+                    StartDate = DateTime.ParseExact("07/05/2022 08:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 08:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 38,
+                    Description = "Mid Morning",
+                    StartDate = DateTime.ParseExact("07/05/2022 09:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 09:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 39,
+                    Description = "Late Morning",
+                    StartDate = DateTime.ParseExact("07/05/2022 10:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 10:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 40,
+                    Description = "Afternoon",
+                    StartDate = DateTime.ParseExact("07/05/2022 12:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 12:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 41,
+                    Description = "Mid Afternoon",
+                    StartDate = DateTime.ParseExact("07/05/2022 13:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 13:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 42,
+                    Description = "Late Afternoon",
+                    StartDate = DateTime.ParseExact("07/05/2022 14:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 14:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 43,
+                    Description = "Evening",
+                    StartDate = DateTime.ParseExact("07/05/2022 17:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 17:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 44,
+                    Description = "Mid Evening",
+                    StartDate = DateTime.ParseExact("07/05/2022 18:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 18:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                },
+                new Appointment
+                {
+                    AppointmentId = 45,
+                    Description = "Late Evening",
+                    StartDate = DateTime.ParseExact("07/05/2022 19:00:00", "dd/MM/yyyy HH:mm:ss", null),
+                    EndDate = DateTime.ParseExact("07/05/2022 19:45:00", "dd/MM/yyyy HH:mm:ss", null),
+                    Booked = false
+                     
+                }
+                );
         }
-
     }
 }
