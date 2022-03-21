@@ -9,9 +9,11 @@ namespace Mission12.Models
     public class GroupContext : DbContext
     {
         public GroupContext(DbContextOptions<GroupContext> options) : base(options)
-        {
-        }
-        public DbSet<Group> Groups { get; set; }
+
+
+        public DbSet<GroupContext> Responses { get; set; }
+
+//         public DbSet<Group> Groups { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         protected override void OnModelCreating(ModelBuilder mb)
         {
@@ -104,4 +106,7 @@ namespace Mission12.Models
                 });
         }
     }
+
+
+
 }
