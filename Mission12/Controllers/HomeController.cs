@@ -6,12 +6,14 @@ namespace Mission12.Controllers
     public class HomeController : Controller
     {
 
-        private GroupContext context { get; set; }
+        private IGroupRepository repo;
+        private IAppointmentRepository apprepo;
        
 
-        public HomeController(GroupContext temp)
+        public HomeController(IGroupRepository temp, IAppointmentRepository temp2)
         {
-            context = temp;
+            repo = temp;
+            apprepo = temp2;
         }
         [HttpGet]
         public IActionResult Index()
@@ -26,20 +28,21 @@ namespace Mission12.Controllers
         [HttpPost]
         public IActionResult Form(Group g)
         {
-            context.Add(g);
-            context.SaveChanges();
+            repo.CreateGroup(g);
 
-            return View();
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public IActionResult ViewAppointments(Appointment a)
         {
             //var appointments = AppointmentContext.Appointments
-                
+
             //    .OrderBy(a => a.AppointmentId)
             //    .ToList();
+            var appointments = apprepo.Appointments;
+            
 
-            return View();
+            return View(appointments);
 
         }
     }
