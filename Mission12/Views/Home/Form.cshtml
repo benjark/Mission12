@@ -6,6 +6,7 @@
 @model Group
 
 <form method="post">
+    <input type="hidden" asp-for="@Model.GroupId" />
     <label asp-for="GroupName">Name of Group</label>
     <input asp-for="GroupName" />
     <br />

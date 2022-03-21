@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 using Mission12.Models;
 
 namespace Mission12.Controllers
@@ -30,13 +31,27 @@ namespace Mission12.Controllers
         {
             repo.CreateGroup(g);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("SignUp");
         }
         [HttpGet]
         public IActionResult ViewAppointments(Appointment a)
         {
             var appointments = apprepo.Appointments;
             
+            return View(appointments);
+
+        }
+
+        [HttpGet]
+        public IActionResult SignUp(Appointment a)
+        {
+            var appointments = apprepo.Appointments;
+
+                {
+                appointments = apprepo.Appointments
+                .Where(a => a.Booked == false);
+                
+                };
             return View(appointments);
 
         }
