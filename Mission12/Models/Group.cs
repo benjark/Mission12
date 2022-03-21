@@ -15,6 +15,7 @@ namespace Mission12.Models
         [Required]
         public string GroupName { get; set; }
         [Required]
+        [Range(1, 15, ErrorMessage = "Group Size must be between 1 and 15")]
         public int GroupSize { get; set; }
         [Required]
         public string Email { get; set; }
