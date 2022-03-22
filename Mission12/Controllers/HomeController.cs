@@ -45,18 +45,18 @@ namespace Mission12.Controllers
 
             return View(appointments);
         }
-           [HttpGet]
+        [HttpGet]
         public IActionResult Edit(int appointmentId)
         {
             ViewBag.Cat = apprepo.Appointments.ToList();
             var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            return RedirectToAction("Form", appt);
+            Group g = appt.Group;
+            return View("Form", g);
         }
 
         [HttpPost]
         public IActionResult Edit(Appointment a)
         {
-        
             apprepo.SaveAppointment(a);
             return RedirectToAction("ViewAppointments");
         }
