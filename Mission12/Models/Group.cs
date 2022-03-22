@@ -20,5 +20,7 @@ namespace Mission12.Models
         [Required]
         public string Email { get; set; }
         public string Phone { get; set; }
+
+        
     }
 }

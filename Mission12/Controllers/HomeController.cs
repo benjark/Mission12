@@ -46,12 +46,13 @@ namespace Mission12.Controllers
             return View(appointments);
         }
         [HttpGet]
-        public IActionResult Edit(int appointmentId)
+        public IActionResult Edit(int appointmentId, int GroupId)
         {
             ViewBag.Cat = apprepo.Appointments.ToList();
-            var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            Group g = appt.Group;
-            return View("Form", g);
+            //var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
+            var group = repo.Groups.Single(t => t.GroupId == GroupId);
+            //Group g = appt.Group;
+            return View("Form", group);
         }
 
         [HttpPost]
