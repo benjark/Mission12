@@ -48,11 +48,9 @@ namespace Mission12.Controllers
         [HttpGet]
         public IActionResult Edit(int appointmentId)
         {
-            
-            //var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            //var group = repo.Groups.Single(t => t.GroupId == GroupId);
-            //Group g = appt.Group;
-            return View("Form", apprepo.Appointments.SingleOrDefault(x => x.AppointmentId == appointmentId).Group);
+            int? g = apprepo.Appointments.SingleOrDefault(x => x.AppointmentId == appointmentId).GroupId;
+            Group group = repo.Groups.SingleOrDefault(x => x.GroupId == g);
+            return View("Form", group);
         }
 
         [HttpPost]
