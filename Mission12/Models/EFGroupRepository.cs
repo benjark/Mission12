@@ -18,6 +18,7 @@ namespace Mission12.Models
 
         public void SaveGroup(Group group)
         {
+            context.Update(group);
             context.SaveChanges();
         }
 

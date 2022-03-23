@@ -23,9 +23,9 @@ namespace Mission12.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Form(Group g)
+        public IActionResult Form()
         {
-            return View(g);
+            return View();
         }
         [HttpPost]
         public IActionResult Form(int appointmentId, Group g)
@@ -46,18 +46,20 @@ namespace Mission12.Controllers
             return View(appointments);
         }
         [HttpGet]
-        public IActionResult Edit(int appointmentId, int GroupId)
+        public IActionResult Edit(int appointmentId)
         {
-            ViewBag.Cat = apprepo.Appointments.ToList();
+            
             //var appt = apprepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            var group = repo.Groups.Single(t => t.GroupId == GroupId);
+            //var group = repo.Groups.Single(t => t.GroupId == GroupId);
             //Group g = appt.Group;
-            return View("Form", group);
+            return View("Form", apprepo.Appointments.SingleOrDefault(x => x.AppointmentId == appointmentId).Group);
         }
 
         [HttpPost]
-        public IActionResult Edit(Appointment a)
+        public IActionResult Edit(int appointmentId, Group g)
         {
+            Appointment a = apprepo.Appointments.FirstOrDefault(x => x.AppointmentId == appointmentId);
+            a.Group = g;
             apprepo.SaveAppointment(a);
             return RedirectToAction("ViewAppointments");
         }
