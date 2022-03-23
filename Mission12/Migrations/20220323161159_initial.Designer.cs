@@ -9,8 +9,8 @@ using Mission12.Models;
 namespace Mission12.Migrations
 {
     [DbContext(typeof(GroupContext))]
-    [Migration("20220321225213_Initial")]
-    partial class Initial
+    [Migration("20220323161159_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
